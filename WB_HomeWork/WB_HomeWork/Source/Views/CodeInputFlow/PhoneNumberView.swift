@@ -10,7 +10,7 @@ import SwiftUI
 struct PhoneNumberView: View {
     var body: some View {
         Text("+7 (921) 233-123-44")
-            .font(.montserratRegular(ofSize: 24))
+            .font(.montserratSemiBold(ofSize: 24))
             .foregroundColor(.white)
             .padding()
     }

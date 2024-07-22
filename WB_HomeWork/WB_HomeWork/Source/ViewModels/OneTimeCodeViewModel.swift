@@ -9,7 +9,7 @@ import SwiftUI
 
 private enum Constants {
     static let correctCode = ""
-    static let incorrectCode = "Не верный код"
+    static let incorrectCode = "Неверный пароль"
 }
 
 class AuthViewModel: ObservableObject {

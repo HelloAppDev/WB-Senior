@@ -26,6 +26,8 @@
 		15FAAA102C4DD270008B56EC /* PhoneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA0C2C4DD270008B56EC /* PhoneNumberView.swift */; };
 		15FAAA112C4DD270008B56EC /* CodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA0D2C4DD270008B56EC /* CodeInputView.swift */; };
 		15FAAA122C4DD270008B56EC /* AuthCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA0E2C4DD270008B56EC /* AuthCodeView.swift */; };
+		15FAAA142C4DE105008B56EC /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA132C4DE105008B56EC /* CountdownView.swift */; };
+		15FAAA162C4DE5E0008B56EC /* CountdownViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA152C4DE5E0008B56EC /* CountdownViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		15FAAA0C2C4DD270008B56EC /* PhoneNumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberView.swift; sourceTree = "<group>"; };
 		15FAAA0D2C4DD270008B56EC /* CodeInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeInputView.swift; sourceTree = "<group>"; };
 		15FAAA0E2C4DD270008B56EC /* AuthCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCodeView.swift; sourceTree = "<group>"; };
+		15FAAA132C4DE105008B56EC /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
+		15FAAA152C4DE5E0008B56EC /* CountdownViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				15FAAA082C4DD1E5008B56EC /* OneTimeCodeViewModel.swift */,
+				15FAAA152C4DE5E0008B56EC /* CountdownViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 				15FAAA0C2C4DD270008B56EC /* PhoneNumberView.swift */,
 				15FAAA0D2C4DD270008B56EC /* CodeInputView.swift */,
 				15FAAA0E2C4DD270008B56EC /* AuthCodeView.swift */,
+				15FAAA132C4DE105008B56EC /* CountdownView.swift */,
 			);
 			path = CodeInputFlow;
 			sourceTree = "<group>";
@@ -247,9 +253,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15FAAA142C4DE105008B56EC /* CountdownView.swift in Sources */,
 				15FAAA112C4DD270008B56EC /* CodeInputView.swift in Sources */,
 				15FAAA062C4DCDE3008B56EC /* BackgroundView.swift in Sources */,
 				15FAA9E22C4DB596008B56EC /* ContentView.swift in Sources */,
+				15FAAA162C4DE5E0008B56EC /* CountdownViewModel.swift in Sources */,
 				15FAAA022C4DCAD8008B56EC /* Color+Extension.swift in Sources */,
 				15FAAA0F2C4DD270008B56EC /* CodeInputFieldView.swift in Sources */,
 				15FAAA122C4DD270008B56EC /* AuthCodeView.swift in Sources */,

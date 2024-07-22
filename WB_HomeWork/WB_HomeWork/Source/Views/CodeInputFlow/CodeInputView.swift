@@ -19,6 +19,7 @@ struct CodeInputView: View {
                                                                                  offsetBy: index)]) : "",
                               isValid: isValid,
                               shouldShowBorders: shouldShowBorders)
+                .padding(.horizontal, 5)
             }
         }
         .foregroundColor(.white)
@@ -35,7 +36,7 @@ struct CodeDigitView: View {
     var body: some View {
         Text(digit)
             .frame(width: 64, height: 80)
-            .background(Color.black.opacity(0.2))
+            .background(Color.white.opacity(0.1))
             .overlay(
                 RoundedRectangle(cornerRadius: 12)
                     .stroke(shouldShowBorders ? (isValid ? Color.green : Color.red) : Color.clear, lineWidth: 1)

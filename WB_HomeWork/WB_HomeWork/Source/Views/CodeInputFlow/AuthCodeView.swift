@@ -9,6 +9,8 @@ import SwiftUI
 
 struct AuthCodeView: View {
     @StateObject private var viewModel: AuthViewModel = .init()
+    @State private var isButtonEnabled = true
+    @State private var countdownFinished = false
     
     var body: some View {
             VStack {
@@ -18,10 +20,17 @@ struct AuthCodeView: View {
                 CodeInputFieldView(code: $viewModel.code,
                                    isValid: viewModel.isValid,
                                    shouldShowBorders: viewModel.shouldShowBorders)
-                
                 Text(viewModel.statusMessage)
                     .foregroundColor(viewModel.statusMessage == "Correct Code" ? .green : .red)
-                
+                    .padding(.top, -30)
+                    .font(.montserratMedium(ofSize: 14))
+                CountdownView()
+                    .onChange(of: countdownFinished) { newValue in
+                        if newValue {
+                            isButtonEnabled = true
+                        }
+                    }
+                    .padding(.bottom, 20)
                 Button(action: {
                     viewModel.validateCode()
                 }) {
@@ -41,6 +50,15 @@ struct AuthCodeView: View {
             .frame(maxWidth: 400)
             .padding()
         }
+    
+    private func startCountdown() {
+        isButtonEnabled = false
+        countdownFinished = false
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 60) {
+            countdownFinished = true
+        }
+    }
 }
 
 struct AuthView_Previews: PreviewProvider {
