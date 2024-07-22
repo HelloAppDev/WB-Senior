@@ -4,13 +4,13 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Montserrat-Medium</string>
-		<string>Montserrat-ExtraLight</string>
-		<string>Montserrat-Light</string>
-		<string>Montserrat-Thin</string>
-		<string>Montserrat-Bold</string>
-		<string>Montserrat-Semibold</string>
-		<string>Montserrat-Regular</string>
+		<string>Montserrat-Medium.ttf</string>
+		<string>Montserrat-ExtraLight.ttf</string>
+		<string>Montserrat-Light.ttf</string>
+		<string>Montserrat-Thin.ttf</string>
+		<string>Montserrat-Bold.ttf</string>
+		<string>Montserrat-Semibold.ttf</string>
+		<string>Montserrat-Regular.ttf</string>
 	</array>
 </dict>
 </plist>
