@@ -34,6 +34,10 @@
 		15FAAA1F2C4F4C5C008B56EC /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA1E2C4F4C5B008B56EC /* View+Extensions.swift */; };
 		15FAAA222C4F52AC008B56EC /* CustomVStackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA212C4F52AC008B56EC /* CustomVStackModifier.swift */; };
 		15FAAA252C4F55BC008B56EC /* AccentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA242C4F55BC008B56EC /* AccentButton.swift */; };
+		15FAAA282C4F6339008B56EC /* NavigationTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA272C4F6339008B56EC /* NavigationTypes.swift */; };
+		15FAAA2A2C4F641B008B56EC /* NavigationActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA292C4F641B008B56EC /* NavigationActions.swift */; };
+		15FAAA2C2C4F65B5008B56EC /* NavigationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA2B2C4F65B5008B56EC /* NavigationExample.swift */; };
+		15FAAA2E2C4F6E39008B56EC /* NavigationExampleScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA2D2C4F6E39008B56EC /* NavigationExampleScreens.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +70,10 @@
 		15FAAA1E2C4F4C5B008B56EC /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		15FAAA212C4F52AC008B56EC /* CustomVStackModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVStackModifier.swift; sourceTree = "<group>"; };
 		15FAAA242C4F55BC008B56EC /* AccentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentButton.swift; sourceTree = "<group>"; };
+		15FAAA272C4F6339008B56EC /* NavigationTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTypes.swift; sourceTree = "<group>"; };
+		15FAAA292C4F641B008B56EC /* NavigationActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationActions.swift; sourceTree = "<group>"; };
+		15FAAA2B2C4F65B5008B56EC /* NavigationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationExample.swift; sourceTree = "<group>"; };
+		15FAAA2D2C4F6E39008B56EC /* NavigationExampleScreens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationExampleScreens.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +128,7 @@
 		15FAA9ED2C4DC9A2008B56EC /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				15FAAA262C4F6325008B56EC /* Navigation */,
 				15FAAA202C4F529D008B56EC /* Modifiers */,
 				15FAAA072C4DD1E5008B56EC /* ViewModels */,
 				15FAAA042C4DCDD7008B56EC /* Views */,
@@ -210,6 +219,17 @@
 			path = Modifiers;
 			sourceTree = "<group>";
 		};
+		15FAAA262C4F6325008B56EC /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				15FAAA272C4F6339008B56EC /* NavigationTypes.swift */,
+				15FAAA292C4F641B008B56EC /* NavigationActions.swift */,
+				15FAAA2B2C4F65B5008B56EC /* NavigationExample.swift */,
+				15FAAA2D2C4F6E39008B56EC /* NavigationExampleScreens.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -288,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15FAAA142C4DE105008B56EC /* CountdownView.swift in Sources */,
+				15FAAA2C2C4F65B5008B56EC /* NavigationExample.swift in Sources */,
 				15FAAA1B2C4F49E6008B56EC /* PhoneInputView.swift in Sources */,
 				15FAAA112C4DD270008B56EC /* CodeInputView.swift in Sources */,
 				15FAAA062C4DCDE3008B56EC /* BackgroundView.swift in Sources */,
@@ -302,9 +323,12 @@
 				15FAAA092C4DD1E5008B56EC /* OneTimeCodeViewModel.swift in Sources */,
 				15FAAA032C4DCAD8008B56EC /* Font+Extensions.swift in Sources */,
 				15FAAA102C4DD270008B56EC /* PhoneNumberView.swift in Sources */,
+				15FAAA282C4F6339008B56EC /* NavigationTypes.swift in Sources */,
 				15FAAA252C4F55BC008B56EC /* AccentButton.swift in Sources */,
+				15FAAA2E2C4F6E39008B56EC /* NavigationExampleScreens.swift in Sources */,
 				15FAA9E02C4DB596008B56EC /* WB_HomeWorkApp.swift in Sources */,
 				15FAAA1C2C4F49E6008B56EC /* PhoneTextFieldView.swift in Sources */,
+				15FAAA2A2C4F641B008B56EC /* NavigationActions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
