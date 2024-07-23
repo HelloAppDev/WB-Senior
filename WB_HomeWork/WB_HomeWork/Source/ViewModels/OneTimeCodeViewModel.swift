@@ -8,7 +8,7 @@
 import SwiftUI
 
 private enum Constants {
-    static let correctCode = ""
+    static let correctCode = "1234"
     static let incorrectCode = "Неверный пароль"
 }
 
@@ -19,7 +19,7 @@ class AuthViewModel: ObservableObject {
     @Published var isValid: Bool = .init()
     @Published var shouldShowBorders: Bool = .init()
     
-    let correctCode = "1234"
+    let correctCode = Constants.correctCode
     let maxDigits = 4
     
     func validateCode() {
