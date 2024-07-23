@@ -7,11 +7,30 @@
 
 import SwiftUI
 
+private enum Constants {
+    static let chevronImage = "chevron.left"
+    static let goBackTitle = "Вернуться назад"
+}
+
 struct ContentView: View {
     var body: some View {
-        VStack {
+        ZStack {
+            BackgroundView()
+            VStack {
+                AuthCodeView()
+                    .padding(.bottom, 20)
+                Button(action: {
+                    // go back action
+                }, label: {
+                    Image(systemName: Constants.chevronImage)
+                        .padding(.leading, 10)
+                    Text(Constants.goBackTitle)
+                        .font(.montserratRegular(ofSize: 16))
+                    
+                })
+                .foregroundColor(.white)
+            }
         }
-        .padding()
     }
 }
 
