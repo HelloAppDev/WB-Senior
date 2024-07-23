@@ -24,7 +24,7 @@ struct CodeInputFieldView: View {
                 .keyboardType(.numberPad)
                 .foregroundColor(.clear)
                 .background(.clear)
-                .onChange(of: code) { newValue in
+                .onChange(of: code) { oldValue, newValue in
                     let filtered = newValue.filter { $0.isNumber }
                     if filtered.count > 4 {
                         code = String(filtered.prefix(4))

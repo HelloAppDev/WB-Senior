@@ -7,22 +7,31 @@
 
 import SwiftUI
 
-struct CountdownView: View {
-    @StateObject private var viewModel = CountdownViewModel()
-    
-       var body: some View {
-           if viewModel.isActive {
-               Text("Запросить повторно через \(viewModel.secondsRemaining) сек")
-                   .onAppear {
-                       viewModel.startCountdown()
-                   }
-                   .onDisappear {
-                       viewModel.resetCountdown()
-                   }
-           }
-       }
+private enum Constants {
+    static let requestAgainTitle = "Запросить повторно"
 }
 
-#Preview {
-    CountdownView()
+struct CountdownView: View {
+    @ObservedObject var viewModel: CountdownViewModel
+
+    var body: some View {
+        if viewModel.isActive {
+            Text("Запросить повторно через \(viewModel.secondsRemaining) сек")
+                .font(.montserratMedium(ofSize: 14))
+                .foregroundColor(Color.white)
+                .onAppear {
+                    viewModel.startCountdown()
+                }
+                .onDisappear {
+                    viewModel.resetCountdown()
+                }
+        } else {
+            Button(Constants.requestAgainTitle) {
+                viewModel.startCountdown()
+            }
+            .opacity(viewModel.isActive ? 0 : 1)
+            .font(.montserratMedium(ofSize: 14))
+            .foregroundColor(Color.white)
+        }
+    }
 }

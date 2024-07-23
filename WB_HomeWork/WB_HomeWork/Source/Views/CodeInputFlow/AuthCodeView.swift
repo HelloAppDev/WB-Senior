@@ -7,57 +7,59 @@
 
 import SwiftUI
 
+private enum Constants {
+    static let mailImage = "mail"
+    static let correctCode = "Correct Code"
+    static let authTitle = "Авторизоваться"
+}
+
 struct AuthCodeView: View {
     @StateObject private var viewModel: AuthViewModel = .init()
+    @StateObject private var countdownViewModel: CountdownViewModel = .init()
     @State private var isButtonEnabled = true
     @State private var countdownFinished = false
     
     var body: some View {
-            VStack {
-                Image("mail")
-                    .padding([.top], 40)
-                PhoneNumberView()
-                CodeInputFieldView(code: $viewModel.code,
-                                   isValid: viewModel.isValid,
-                                   shouldShowBorders: viewModel.shouldShowBorders)
-                Text(viewModel.statusMessage)
-                    .foregroundColor(viewModel.statusMessage == "Correct Code" ? .green : .red)
-                    .padding(.top, -30)
-                    .font(.montserratMedium(ofSize: 14))
-                CountdownView()
-                    .onChange(of: countdownFinished) { newValue in
-                        if newValue {
-                            isButtonEnabled = true
-                        }
+        VStack {
+            Image(Constants.mailImage)
+                .padding([.top], 20)
+            PhoneNumberView(phoneNumber: "+7 (777) 777-77-77")
+            CodeInputFieldView(code: $viewModel.code,
+                               isValid: viewModel.isValid,
+                               shouldShowBorders: viewModel.shouldShowBorders)
+            Text(viewModel.statusMessage)
+                .foregroundColor(viewModel.statusMessage == Constants.correctCode ? .green : .red)
+                .padding(.top, -15)
+                .font(.montserratMedium(ofSize: 14))
+            CountdownView(viewModel: countdownViewModel)
+                .onChange(of: countdownViewModel.countdownFinished) { newValue in
+                    if newValue {
+                        isButtonEnabled = true
                     }
-                    .padding(.bottom, 20)
-                Button(action: {
-                    viewModel.validateCode()
-                }) {
-                    Text("Авторизоваться")
-                        .foregroundColor(.white)
-                        .font(.montserratMedium(ofSize: 16))
                 }
-                .padding(.horizontal, 90)
-                .frame(height: 48)
-                .background(Color.buttonColor)
-                .clipShape(RoundedRectangle(cornerRadius: 12))
-                .padding([.bottom], 30)
+                .onAppear {
+                    countdownViewModel.startCountdown()
+                }
+                .frame(maxWidth: .infinity, alignment: .center)
+                .padding([.bottom, .top], 15)
+            Button(action: {
+                viewModel.validateCode()
+            }) {
+                Text(Constants.authTitle)
+                    .foregroundColor(.white)
+                    .font(.montserratMedium(ofSize: 16))
             }
-            .padding()
-            .background(Color.black.opacity(0.3))
-            .cornerRadius(28)
-            .frame(maxWidth: 400)
-            .padding()
+            .padding(.horizontal, 110)
+            .frame(height: 48)
+            .background(Color.buttonColor)
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+            .padding([.bottom], 30)
         }
-    
-    private func startCountdown() {
-        isButtonEnabled = false
-        countdownFinished = false
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 60) {
-            countdownFinished = true
-        }
+        .padding()
+        .background(Color.black.opacity(0.3))
+        .cornerRadius(28)
+        .frame(maxWidth: 400)
+        .padding()
     }
 }
 

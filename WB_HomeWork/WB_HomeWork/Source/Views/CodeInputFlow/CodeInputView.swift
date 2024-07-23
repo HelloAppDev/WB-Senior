@@ -23,7 +23,6 @@ struct CodeInputView: View {
             }
         }
         .foregroundColor(.white)
-        .padding()
         .cornerRadius(8)
     }
 }

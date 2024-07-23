@@ -13,6 +13,7 @@ private enum Constants {
 }
 
 class AuthViewModel: ObservableObject {
+    @Published var phoneNumber: String = .init()
     @Published var code: String = .init()
     @Published var statusMessage: String = .init()
     @Published var isValid: Bool = .init()
