@@ -14,10 +14,16 @@ private enum Constants {
 }
 
 struct AuthCodeView: View {
-    @StateObject private var viewModel: AuthViewModel = .init()
+    @StateObject private var viewModel: AuthViewModel
     @StateObject private var countdownViewModel: CountdownViewModel = .init()
     @State private var isButtonEnabled = true
     @State private var countdownFinished = false
+    
+    init(phoneNumber: String) {
+        let viewModel = AuthViewModel()
+        viewModel.phoneNumber = phoneNumber
+        _viewModel = StateObject(wrappedValue: viewModel)
+    }
     
     var body: some View {
         VStack {
@@ -32,7 +38,7 @@ struct AuthCodeView: View {
                 .padding(.top, -15)
                 .font(.montserratMedium(ofSize: 14))
             CountdownView(viewModel: countdownViewModel)
-                .onChange(of: countdownViewModel.countdownFinished) { newValue in
+                .onChange(of: countdownViewModel.countdownFinished) { oldValue, newValue in
                     if newValue {
                         isButtonEnabled = true
                     }
@@ -42,30 +48,20 @@ struct AuthCodeView: View {
                 }
                 .frame(maxWidth: .infinity, alignment: .center)
                 .padding([.bottom, .top], 15)
-            Button(action: {
+            AccentButton(text: Constants.authTitle) {
                 viewModel.validateCode()
-            }) {
-                Text(Constants.authTitle)
-                    .foregroundColor(.white)
-                    .font(.montserratMedium(ofSize: 16))
             }
-            .padding(.horizontal, 110)
-            .frame(height: 48)
-            .background(Color.buttonColor)
-            .clipShape(RoundedRectangle(cornerRadius: 12))
-            .padding([.bottom], 30)
         }
-        .padding()
-        .background(Color.black.opacity(0.3))
-        .cornerRadius(28)
-        .frame(maxWidth: 400)
-        .padding()
+        .customVStackStyle()
+        .onTapGesture {
+            hideKeyboard()
+        }
     }
 }
 
 struct AuthView_Previews: PreviewProvider {
     static var previews: some View {
-        AuthCodeView()
+        AuthCodeView(phoneNumber: "")
     }
 }
 

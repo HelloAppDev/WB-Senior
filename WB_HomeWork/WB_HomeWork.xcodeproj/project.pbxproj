@@ -18,8 +18,8 @@
 		15FAA9FB2C4DC9CC008B56EC /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15FAA9F42C4DC9CC008B56EC /* Montserrat-Bold.ttf */; };
 		15FAA9FC2C4DC9CC008B56EC /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15FAA9F52C4DC9CC008B56EC /* Montserrat-SemiBold.ttf */; };
 		15FAA9FD2C4DC9CC008B56EC /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15FAA9F62C4DC9CC008B56EC /* Montserrat-Regular.ttf */; };
-		15FAAA022C4DCAD8008B56EC /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA002C4DCAD8008B56EC /* Color+Extension.swift */; };
-		15FAAA032C4DCAD8008B56EC /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA012C4DCAD8008B56EC /* Font+Extension.swift */; };
+		15FAAA022C4DCAD8008B56EC /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA002C4DCAD8008B56EC /* Color+Extensions.swift */; };
+		15FAAA032C4DCAD8008B56EC /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA012C4DCAD8008B56EC /* Font+Extensions.swift */; };
 		15FAAA062C4DCDE3008B56EC /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA052C4DCDE3008B56EC /* BackgroundView.swift */; };
 		15FAAA092C4DD1E5008B56EC /* OneTimeCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA082C4DD1E5008B56EC /* OneTimeCodeViewModel.swift */; };
 		15FAAA0F2C4DD270008B56EC /* CodeInputFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA0B2C4DD270008B56EC /* CodeInputFieldView.swift */; };
@@ -28,6 +28,12 @@
 		15FAAA122C4DD270008B56EC /* AuthCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA0E2C4DD270008B56EC /* AuthCodeView.swift */; };
 		15FAAA142C4DE105008B56EC /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA132C4DE105008B56EC /* CountdownView.swift */; };
 		15FAAA162C4DE5E0008B56EC /* CountdownViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA152C4DE5E0008B56EC /* CountdownViewModel.swift */; };
+		15FAAA1B2C4F49E6008B56EC /* PhoneInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA182C4F49E5008B56EC /* PhoneInputView.swift */; };
+		15FAAA1C2C4F49E6008B56EC /* PhoneTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA192C4F49E5008B56EC /* PhoneTextFieldView.swift */; };
+		15FAAA1D2C4F49E6008B56EC /* AuthPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA1A2C4F49E5008B56EC /* AuthPhoneView.swift */; };
+		15FAAA1F2C4F4C5C008B56EC /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA1E2C4F4C5B008B56EC /* View+Extensions.swift */; };
+		15FAAA222C4F52AC008B56EC /* CustomVStackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA212C4F52AC008B56EC /* CustomVStackModifier.swift */; };
+		15FAAA252C4F55BC008B56EC /* AccentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA242C4F55BC008B56EC /* AccentButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,8 +50,8 @@
 		15FAA9F52C4DC9CC008B56EC /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		15FAA9F62C4DC9CC008B56EC /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		15FAA9FE2C4DCA1B008B56EC /* WB-HomeWork-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "WB-HomeWork-Info.plist"; sourceTree = SOURCE_ROOT; };
-		15FAAA002C4DCAD8008B56EC /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
-		15FAAA012C4DCAD8008B56EC /* Font+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		15FAAA002C4DCAD8008B56EC /* Color+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		15FAAA012C4DCAD8008B56EC /* Font+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
 		15FAAA052C4DCDE3008B56EC /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		15FAAA082C4DD1E5008B56EC /* OneTimeCodeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneTimeCodeViewModel.swift; sourceTree = "<group>"; };
 		15FAAA0B2C4DD270008B56EC /* CodeInputFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeInputFieldView.swift; sourceTree = "<group>"; };
@@ -54,6 +60,12 @@
 		15FAAA0E2C4DD270008B56EC /* AuthCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCodeView.swift; sourceTree = "<group>"; };
 		15FAAA132C4DE105008B56EC /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
 		15FAAA152C4DE5E0008B56EC /* CountdownViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownViewModel.swift; sourceTree = "<group>"; };
+		15FAAA182C4F49E5008B56EC /* PhoneInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneInputView.swift; sourceTree = "<group>"; };
+		15FAAA192C4F49E5008B56EC /* PhoneTextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneTextFieldView.swift; sourceTree = "<group>"; };
+		15FAAA1A2C4F49E5008B56EC /* AuthPhoneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthPhoneView.swift; sourceTree = "<group>"; };
+		15FAAA1E2C4F4C5B008B56EC /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		15FAAA212C4F52AC008B56EC /* CustomVStackModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVStackModifier.swift; sourceTree = "<group>"; };
+		15FAAA242C4F55BC008B56EC /* AccentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +120,7 @@
 		15FAA9ED2C4DC9A2008B56EC /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				15FAAA202C4F529D008B56EC /* Modifiers */,
 				15FAAA072C4DD1E5008B56EC /* ViewModels */,
 				15FAAA042C4DCDD7008B56EC /* Views */,
 				15FAA9FF2C4DCAD8008B56EC /* Extensions */,
@@ -140,8 +153,9 @@
 		15FAA9FF2C4DCAD8008B56EC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				15FAAA002C4DCAD8008B56EC /* Color+Extension.swift */,
-				15FAAA012C4DCAD8008B56EC /* Font+Extension.swift */,
+				15FAAA002C4DCAD8008B56EC /* Color+Extensions.swift */,
+				15FAAA012C4DCAD8008B56EC /* Font+Extensions.swift */,
+				15FAAA1E2C4F4C5B008B56EC /* View+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -149,8 +163,10 @@
 		15FAAA042C4DCDD7008B56EC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				15FAAA172C4F49E5008B56EC /* PhoneInputFlow */,
 				15FAAA0A2C4DD270008B56EC /* CodeInputFlow */,
 				15FAAA052C4DCDE3008B56EC /* BackgroundView.swift */,
+				15FAAA242C4F55BC008B56EC /* AccentButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +190,24 @@
 				15FAAA132C4DE105008B56EC /* CountdownView.swift */,
 			);
 			path = CodeInputFlow;
+			sourceTree = "<group>";
+		};
+		15FAAA172C4F49E5008B56EC /* PhoneInputFlow */ = {
+			isa = PBXGroup;
+			children = (
+				15FAAA182C4F49E5008B56EC /* PhoneInputView.swift */,
+				15FAAA192C4F49E5008B56EC /* PhoneTextFieldView.swift */,
+				15FAAA1A2C4F49E5008B56EC /* AuthPhoneView.swift */,
+			);
+			path = PhoneInputFlow;
+			sourceTree = "<group>";
+		};
+		15FAAA202C4F529D008B56EC /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				15FAAA212C4F52AC008B56EC /* CustomVStackModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,17 +288,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				15FAAA142C4DE105008B56EC /* CountdownView.swift in Sources */,
+				15FAAA1B2C4F49E6008B56EC /* PhoneInputView.swift in Sources */,
 				15FAAA112C4DD270008B56EC /* CodeInputView.swift in Sources */,
 				15FAAA062C4DCDE3008B56EC /* BackgroundView.swift in Sources */,
+				15FAAA222C4F52AC008B56EC /* CustomVStackModifier.swift in Sources */,
 				15FAA9E22C4DB596008B56EC /* ContentView.swift in Sources */,
 				15FAAA162C4DE5E0008B56EC /* CountdownViewModel.swift in Sources */,
-				15FAAA022C4DCAD8008B56EC /* Color+Extension.swift in Sources */,
+				15FAAA1F2C4F4C5C008B56EC /* View+Extensions.swift in Sources */,
+				15FAAA1D2C4F49E6008B56EC /* AuthPhoneView.swift in Sources */,
+				15FAAA022C4DCAD8008B56EC /* Color+Extensions.swift in Sources */,
 				15FAAA0F2C4DD270008B56EC /* CodeInputFieldView.swift in Sources */,
 				15FAAA122C4DD270008B56EC /* AuthCodeView.swift in Sources */,
 				15FAAA092C4DD1E5008B56EC /* OneTimeCodeViewModel.swift in Sources */,
-				15FAAA032C4DCAD8008B56EC /* Font+Extension.swift in Sources */,
+				15FAAA032C4DCAD8008B56EC /* Font+Extensions.swift in Sources */,
 				15FAAA102C4DD270008B56EC /* PhoneNumberView.swift in Sources */,
+				15FAAA252C4F55BC008B56EC /* AccentButton.swift in Sources */,
 				15FAA9E02C4DB596008B56EC /* WB_HomeWorkApp.swift in Sources */,
+				15FAAA1C2C4F49E6008B56EC /* PhoneTextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,18 +17,18 @@ struct ContentView: View {
         ZStack {
             BackgroundView()
             VStack {
-                AuthCodeView()
+                AuthPhoneView()
                     .padding(.bottom, 20)
-                Button(action: {
-                    // go back action
-                }, label: {
-                    Image(systemName: Constants.chevronImage)
-                        .padding(.leading, 10)
-                    Text(Constants.goBackTitle)
-                        .font(.montserratRegular(ofSize: 16))
-                    
-                })
-                .foregroundColor(.white)
+//                Button(action: {
+//                    // go back action
+//                }, label: {
+//                    Image(systemName: Constants.chevronImage)
+//                        .padding(.leading, 10)
+//                    Text(Constants.goBackTitle)
+//                        .font(.montserratRegular(ofSize: 16))
+//                    
+//                })
+//                .foregroundColor(.white)
             }
         }
     }
