@@ -17,8 +17,8 @@ struct ContentView: View {
         ZStack {
             BackgroundView()
             VStack {
-                AuthPhoneView()
-                    .padding(.bottom, 20)
+                GenericContainerView()
+                    //.padding(.bottom, 20)
 //                Button(action: {
 //                    // go back action
 //                }, label: {
