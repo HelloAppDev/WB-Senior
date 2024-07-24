@@ -17,7 +17,7 @@ struct ContentView: View {
         ZStack {
             BackgroundView()
             VStack {
-                AuthPhoneView()
+                LanguageChangableView()
                     .padding(.bottom, 20)
 //                Button(action: {
 //                    // go back action

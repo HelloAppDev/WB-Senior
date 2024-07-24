@@ -34,6 +34,13 @@
 		15FAAA1F2C4F4C5C008B56EC /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA1E2C4F4C5B008B56EC /* View+Extensions.swift */; };
 		15FAAA222C4F52AC008B56EC /* CustomVStackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA212C4F52AC008B56EC /* CustomVStackModifier.swift */; };
 		15FAAA252C4F55BC008B56EC /* AccentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA242C4F55BC008B56EC /* AccentButton.swift */; };
+		15FAAA3D2C519916008B56EC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15FAAA3C2C519916008B56EC /* Localizable.strings */; };
+		15FAAA3F2C51992C008B56EC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15FAAA3E2C51992C008B56EC /* Localizable.strings */; };
+		15FAAA422C519B90008B56EC /* L10nStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA412C519B90008B56EC /* L10nStrings.swift */; };
+		15FAAA452C519CB6008B56EC /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA442C519CB6008B56EC /* LanguageManager.swift */; };
+		15FAAA472C51AB66008B56EC /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA462C51AB66008B56EC /* Bundle+Extensions.swift */; };
+		15FAAA492C51ABE5008B56EC /* LanguageChangableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA482C51ABE5008B56EC /* LanguageChangableView.swift */; };
+		15FAAA4B2C51B2F5008B56EC /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA4A2C51B2F5008B56EC /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +73,13 @@
 		15FAAA1E2C4F4C5B008B56EC /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		15FAAA212C4F52AC008B56EC /* CustomVStackModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVStackModifier.swift; sourceTree = "<group>"; };
 		15FAAA242C4F55BC008B56EC /* AccentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentButton.swift; sourceTree = "<group>"; };
+		15FAAA3C2C519916008B56EC /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		15FAAA3E2C51992C008B56EC /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		15FAAA412C519B90008B56EC /* L10nStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10nStrings.swift; sourceTree = "<group>"; };
+		15FAAA442C519CB6008B56EC /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
+		15FAAA462C51AB66008B56EC /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		15FAAA482C51ABE5008B56EC /* LanguageChangableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageChangableView.swift; sourceTree = "<group>"; };
+		15FAAA4A2C51B2F5008B56EC /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +134,7 @@
 		15FAA9ED2C4DC9A2008B56EC /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				15FAAA432C519CA4008B56EC /* AppManagers */,
 				15FAAA202C4F529D008B56EC /* Modifiers */,
 				15FAAA072C4DD1E5008B56EC /* ViewModels */,
 				15FAAA042C4DCDD7008B56EC /* Views */,
@@ -131,6 +146,9 @@
 		15FAA9EE2C4DC9AB008B56EC /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				15FAAA402C519B6A008B56EC /* L10nStrings */,
+				15FAAA3B2C5198E3008B56EC /* ru.lproj */,
+				15FAAA3A2C5198DC008B56EC /* en.lproj */,
 				15FAA9EF2C4DC9CC008B56EC /* Fonts */,
 			);
 			path = Resource;
@@ -156,6 +174,8 @@
 				15FAAA002C4DCAD8008B56EC /* Color+Extensions.swift */,
 				15FAAA012C4DCAD8008B56EC /* Font+Extensions.swift */,
 				15FAAA1E2C4F4C5B008B56EC /* View+Extensions.swift */,
+				15FAAA462C51AB66008B56EC /* Bundle+Extensions.swift */,
+				15FAAA4A2C51B2F5008B56EC /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -167,6 +187,7 @@
 				15FAAA0A2C4DD270008B56EC /* CodeInputFlow */,
 				15FAAA052C4DCDE3008B56EC /* BackgroundView.swift */,
 				15FAAA242C4F55BC008B56EC /* AccentButton.swift */,
+				15FAAA482C51ABE5008B56EC /* LanguageChangableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,6 +229,38 @@
 				15FAAA212C4F52AC008B56EC /* CustomVStackModifier.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		15FAAA3A2C5198DC008B56EC /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				15FAAA3C2C519916008B56EC /* Localizable.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		15FAAA3B2C5198E3008B56EC /* ru.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				15FAAA3E2C51992C008B56EC /* Localizable.strings */,
+			);
+			path = ru.lproj;
+			sourceTree = "<group>";
+		};
+		15FAAA402C519B6A008B56EC /* L10nStrings */ = {
+			isa = PBXGroup;
+			children = (
+				15FAAA412C519B90008B56EC /* L10nStrings.swift */,
+			);
+			path = L10nStrings;
+			sourceTree = "<group>";
+		};
+		15FAAA432C519CA4008B56EC /* AppManagers */ = {
+			isa = PBXGroup;
+			children = (
+				15FAAA442C519CB6008B56EC /* LanguageManager.swift */,
+			);
+			path = AppManagers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +305,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 15FAA9D32C4DB596008B56EC;
 			productRefGroup = 15FAA9DD2C4DB596008B56EC /* Products */;
@@ -270,9 +324,11 @@
 			files = (
 				15FAA9FD2C4DC9CC008B56EC /* Montserrat-Regular.ttf in Resources */,
 				15FAA9F82C4DC9CC008B56EC /* Montserrat-Light.ttf in Resources */,
+				15FAAA3F2C51992C008B56EC /* Localizable.strings in Resources */,
 				15FAA9E72C4DB599008B56EC /* Preview Assets.xcassets in Resources */,
 				15FAA9F72C4DC9CC008B56EC /* Montserrat-Medium.ttf in Resources */,
 				15FAA9E42C4DB599008B56EC /* Assets.xcassets in Resources */,
+				15FAAA3D2C519916008B56EC /* Localizable.strings in Resources */,
 				15FAA9FA2C4DC9CC008B56EC /* Montserrat-Thin.ttf in Resources */,
 				15FAA9F92C4DC9CC008B56EC /* Montserrat-ExtraLight.ttf in Resources */,
 				15FAA9FC2C4DC9CC008B56EC /* Montserrat-SemiBold.ttf in Resources */,
@@ -291,11 +347,15 @@
 				15FAAA1B2C4F49E6008B56EC /* PhoneInputView.swift in Sources */,
 				15FAAA112C4DD270008B56EC /* CodeInputView.swift in Sources */,
 				15FAAA062C4DCDE3008B56EC /* BackgroundView.swift in Sources */,
+				15FAAA492C51ABE5008B56EC /* LanguageChangableView.swift in Sources */,
 				15FAAA222C4F52AC008B56EC /* CustomVStackModifier.swift in Sources */,
 				15FAA9E22C4DB596008B56EC /* ContentView.swift in Sources */,
+				15FAAA472C51AB66008B56EC /* Bundle+Extensions.swift in Sources */,
 				15FAAA162C4DE5E0008B56EC /* CountdownViewModel.swift in Sources */,
 				15FAAA1F2C4F4C5C008B56EC /* View+Extensions.swift in Sources */,
+				15FAAA422C519B90008B56EC /* L10nStrings.swift in Sources */,
 				15FAAA1D2C4F49E6008B56EC /* AuthPhoneView.swift in Sources */,
+				15FAAA4B2C51B2F5008B56EC /* String+Extension.swift in Sources */,
 				15FAAA022C4DCAD8008B56EC /* Color+Extensions.swift in Sources */,
 				15FAAA0F2C4DD270008B56EC /* CodeInputFieldView.swift in Sources */,
 				15FAAA122C4DD270008B56EC /* AuthCodeView.swift in Sources */,
@@ -305,6 +365,7 @@
 				15FAAA252C4F55BC008B56EC /* AccentButton.swift in Sources */,
 				15FAA9E02C4DB596008B56EC /* WB_HomeWorkApp.swift in Sources */,
 				15FAAA1C2C4F49E6008B56EC /* PhoneTextFieldView.swift in Sources */,
+				15FAAA452C519CB6008B56EC /* LanguageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
