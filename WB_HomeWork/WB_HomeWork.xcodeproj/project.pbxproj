@@ -34,6 +34,10 @@
 		15FAAA1F2C4F4C5C008B56EC /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA1E2C4F4C5B008B56EC /* View+Extensions.swift */; };
 		15FAAA222C4F52AC008B56EC /* CustomVStackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA212C4F52AC008B56EC /* CustomVStackModifier.swift */; };
 		15FAAA252C4F55BC008B56EC /* AccentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA242C4F55BC008B56EC /* AccentButton.swift */; };
+		15FAAA4F2C524602008B56EC /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA4E2C524601008B56EC /* Collection+Extensions.swift */; };
+		15FAAA522C52462B008B56EC /* Cargo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA512C52462B008B56EC /* Cargo.swift */; };
+		15FAAA542C52479D008B56EC /* CargoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA532C52479D008B56EC /* CargoView.swift */; };
+		15FAAA572C5254DE008B56EC /* ReusableTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAAA562C5254DE008B56EC /* ReusableTextfield.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +70,10 @@
 		15FAAA1E2C4F4C5B008B56EC /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		15FAAA212C4F52AC008B56EC /* CustomVStackModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVStackModifier.swift; sourceTree = "<group>"; };
 		15FAAA242C4F55BC008B56EC /* AccentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentButton.swift; sourceTree = "<group>"; };
+		15FAAA4E2C524601008B56EC /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
+		15FAAA512C52462B008B56EC /* Cargo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cargo.swift; sourceTree = "<group>"; };
+		15FAAA532C52479D008B56EC /* CargoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CargoView.swift; sourceTree = "<group>"; };
+		15FAAA562C5254DE008B56EC /* ReusableTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableTextfield.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +128,7 @@
 		15FAA9ED2C4DC9A2008B56EC /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				15FAAA502C52461E008B56EC /* Models */,
 				15FAAA202C4F529D008B56EC /* Modifiers */,
 				15FAAA072C4DD1E5008B56EC /* ViewModels */,
 				15FAAA042C4DCDD7008B56EC /* Views */,
@@ -156,6 +165,7 @@
 				15FAAA002C4DCAD8008B56EC /* Color+Extensions.swift */,
 				15FAAA012C4DCAD8008B56EC /* Font+Extensions.swift */,
 				15FAAA1E2C4F4C5B008B56EC /* View+Extensions.swift */,
+				15FAAA4E2C524601008B56EC /* Collection+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -163,10 +173,12 @@
 		15FAAA042C4DCDD7008B56EC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				15FAAA552C5254D1008B56EC /* ReusableViews */,
 				15FAAA172C4F49E5008B56EC /* PhoneInputFlow */,
 				15FAAA0A2C4DD270008B56EC /* CodeInputFlow */,
 				15FAAA052C4DCDE3008B56EC /* BackgroundView.swift */,
 				15FAAA242C4F55BC008B56EC /* AccentButton.swift */,
+				15FAAA532C52479D008B56EC /* CargoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,6 +220,22 @@
 				15FAAA212C4F52AC008B56EC /* CustomVStackModifier.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		15FAAA502C52461E008B56EC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				15FAAA512C52462B008B56EC /* Cargo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		15FAAA552C5254D1008B56EC /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				15FAAA562C5254DE008B56EC /* ReusableTextfield.swift */,
+			);
+			path = ReusableViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,15 +317,19 @@
 			files = (
 				15FAAA142C4DE105008B56EC /* CountdownView.swift in Sources */,
 				15FAAA1B2C4F49E6008B56EC /* PhoneInputView.swift in Sources */,
+				15FAAA572C5254DE008B56EC /* ReusableTextfield.swift in Sources */,
 				15FAAA112C4DD270008B56EC /* CodeInputView.swift in Sources */,
 				15FAAA062C4DCDE3008B56EC /* BackgroundView.swift in Sources */,
 				15FAAA222C4F52AC008B56EC /* CustomVStackModifier.swift in Sources */,
 				15FAA9E22C4DB596008B56EC /* ContentView.swift in Sources */,
 				15FAAA162C4DE5E0008B56EC /* CountdownViewModel.swift in Sources */,
 				15FAAA1F2C4F4C5C008B56EC /* View+Extensions.swift in Sources */,
+				15FAAA542C52479D008B56EC /* CargoView.swift in Sources */,
 				15FAAA1D2C4F49E6008B56EC /* AuthPhoneView.swift in Sources */,
 				15FAAA022C4DCAD8008B56EC /* Color+Extensions.swift in Sources */,
+				15FAAA522C52462B008B56EC /* Cargo.swift in Sources */,
 				15FAAA0F2C4DD270008B56EC /* CodeInputFieldView.swift in Sources */,
+				15FAAA4F2C524602008B56EC /* Collection+Extensions.swift in Sources */,
 				15FAAA122C4DD270008B56EC /* AuthCodeView.swift in Sources */,
 				15FAAA092C4DD1E5008B56EC /* OneTimeCodeViewModel.swift in Sources */,
 				15FAAA032C4DCAD8008B56EC /* Font+Extensions.swift in Sources */,
