@@ -17,7 +17,7 @@ struct ContentView: View {
         ZStack {
             BackgroundView()
             VStack {
-                CargoView()
+                AnyView(CargoView.stub())
                     .padding(.bottom, 20)
 //                Button(action: {
 //                    // go back action
