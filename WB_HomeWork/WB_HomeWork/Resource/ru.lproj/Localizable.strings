@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  WB_HomeWork
+
+  Created by Мария Изюменко on 25.07.2024.
+  
+*/
+
+"Car_L10n_Key" = "Машина";
+"Boy_L10n_Key" = "Мальчик";
+"Girl_L10n_Key" = "Девочка";
+"СhangeLanguage_L10n_Key" = "Сменить язык";
+"Date_L10n_Key" = "Дата";
+"Distance_L10n_Key" = "Дистанция";
