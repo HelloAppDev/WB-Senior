@@ -17,8 +17,7 @@ struct ContentView: View {
         ZStack {
             BackgroundView()
             VStack {
-                CargoView()
-                    .padding(.bottom, 20)
+                CalculatorView()
 //                Button(action: {
 //                    // go back action
 //                }, label: {
