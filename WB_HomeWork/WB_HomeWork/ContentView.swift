@@ -16,19 +16,8 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             BackgroundView()
-            VStack {
-                AnyView(CargoView.stub())
-                    .padding(.bottom, 20)
-//                Button(action: {
-//                    // go back action
-//                }, label: {
-//                    Image(systemName: Constants.chevronImage)
-//                        .padding(.leading, 10)
-//                    Text(Constants.goBackTitle)
-//                        .font(.montserratRegular(ofSize: 16))
-//                    
-//                })
-//                .foregroundColor(.white)
+            HStack {
+                SideTabBarView()
             }
         }
     }
