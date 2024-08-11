@@ -8,10 +8,7 @@
 import SwiftUI
 
 struct CargoView: View {
-    @State private var cargos: [Cargo] = [
-        Cargo(width: 2.0, height: 3.0, depth: 4.0),
-        Cargo(width: 1.5, height: 2.5, depth: 3.5)
-    ]
+    @State private var cargos: [Cargo] = []
     
     var body: some View {
         VStack(spacing: 20) {
@@ -35,5 +32,21 @@ struct CargoView: View {
             }
         }
         .padding()
+        .onAppear {
+            loadCargos()
+        }
+    }
+    
+    private func loadCargos() {
+        cargos = [
+            Cargo(width: 2.0, height: 3.0, depth: 4.0),
+            Cargo(width: 1.5, height: 2.5, depth: 3.5)
+        ]
+    }
+}
+
+extension CargoView: Stubbable {
+    static func stub() -> any View {
+        return CargoView()
     }
 }

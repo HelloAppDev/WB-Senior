@@ -23,4 +23,8 @@ extension View {
     func customVStackStyle() -> some View {
         self.modifier(CustomVStackModifier())
     }
+    
+    func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
+        clipShape(RoundedCorner(radius: radius, corners: corners))
+    }
 }
