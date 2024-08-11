@@ -7,6 +7,11 @@
 		<string>en</string>
 		<string>Russian</string>
 	</array>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_wbchat._tcp</string>
+		<string>_wbchat._upd</string>
+	</array>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Montserrat-Medium.ttf</string>

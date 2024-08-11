@@ -28,6 +28,8 @@
 		157CFAB62C68118800AFEA3C /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CFAB52C68118800AFEA3C /* CalculatorView.swift */; };
 		157CFAB82C68125600AFEA3C /* CalculatorViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CFAB72C68125600AFEA3C /* CalculatorViewUITests.swift */; };
 		157CFABA2C68142000AFEA3C /* CalculatorButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CFAB92C68141F00AFEA3C /* CalculatorButtonView.swift */; };
+		157CFABC2C68E9F300AFEA3C /* MultipeerConnectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CFABB2C68E9F300AFEA3C /* MultipeerConnectManager.swift */; };
+		157CFABF2C68EC4100AFEA3C /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CFABE2C68EC4100AFEA3C /* ChatView.swift */; };
 		15FAA9E02C4DB596008B56EC /* WB_HomeWorkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAA9DF2C4DB596008B56EC /* WB_HomeWorkApp.swift */; };
 		15FAA9E22C4DB596008B56EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAA9E12C4DB596008B56EC /* ContentView.swift */; };
 		15FAA9E42C4DB599008B56EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15FAA9E32C4DB599008B56EC /* Assets.xcassets */; };
@@ -119,6 +121,8 @@
 		157CFAB52C68118800AFEA3C /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		157CFAB72C68125600AFEA3C /* CalculatorViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewUITests.swift; sourceTree = "<group>"; };
 		157CFAB92C68141F00AFEA3C /* CalculatorButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButtonView.swift; sourceTree = "<group>"; };
+		157CFABB2C68E9F300AFEA3C /* MultipeerConnectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerConnectManager.swift; sourceTree = "<group>"; };
+		157CFABE2C68EC4100AFEA3C /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		15FAA9DC2C4DB596008B56EC /* WB_HomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WB_HomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15FAA9DF2C4DB596008B56EC /* WB_HomeWorkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WB_HomeWorkApp.swift; sourceTree = "<group>"; };
 		15FAA9E12C4DB596008B56EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -196,7 +200,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-157CFA8F2C680E6200AFEA3C /* Calculator */ = {
+		157CFA6D2C64C8FA00AFEA3C /* StatisticView */ = {
+			isa = PBXGroup;
+			children = (
+				157CFA752C64EDA600AFEA3C /* StatisticViewContentViews */,
+				157CFA712C64ECE900AFEA3C /* StatisticView.swift */,
+				157CFA732C64ED7C00AFEA3C /* StatisticViewContent.swift */,
+			);
+			path = StatisticView;
+			sourceTree = "<group>";
+		};
+		157CFA6E2C64C9B400AFEA3C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				157CFA6F2C64C9CD00AFEA3C /* Stubbable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		157CFA752C64EDA600AFEA3C /* StatisticViewContentViews */ = {
+			isa = PBXGroup;
+			children = (
+				157CFA772C64EDE400AFEA3C /* StatsticContentViews.swift */,
+				157CFA792C64EE3000AFEA3C /* TopBarView.swift */,
+				157CFA7B2C64EE6300AFEA3C /* SideBarView.swift */,
+				157CFA7D2C64EEBE00AFEA3C /* IconTitledButton.swift */,
+				157CFA7F2C64EF2000AFEA3C /* RoundedCorner.swift */,
+				157CFA812C64EF4400AFEA3C /* SideTabBarView.swift */,
+				157CFA832C64EFA100AFEA3C /* SideBarButtonsStackView.swift */,
+				157CFA852C64EFFD00AFEA3C /* GradientBackgroundView.swift */,
+				157CFA8B2C66BC1B00AFEA3C /* CircleImage.swift */,
+			);
+			path = StatisticViewContentViews;
+			sourceTree = "<group>";
+		};
+		157CFA8F2C680E6200AFEA3C /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
 				157CFA902C680E7400AFEA3C /* Calculator.swift */,
@@ -231,38 +269,12 @@
 			path = CalculatorView;
 			sourceTree = "<group>";
 		};
-		157CFA6D2C64C8FA00AFEA3C /* StatisticView */ = {
+		157CFABD2C68EC3100AFEA3C /* ChatView */ = {
 			isa = PBXGroup;
 			children = (
-				157CFA752C64EDA600AFEA3C /* StatisticViewContentViews */,
-				157CFA712C64ECE900AFEA3C /* StatisticView.swift */,
-				157CFA732C64ED7C00AFEA3C /* StatisticViewContent.swift */,
+				157CFABE2C68EC4100AFEA3C /* ChatView.swift */,
 			);
-			path = StatisticView;
-			sourceTree = "<group>";
-		};
-		157CFA6E2C64C9B400AFEA3C /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				157CFA6F2C64C9CD00AFEA3C /* Stubbable.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		157CFA752C64EDA600AFEA3C /* StatisticViewContentViews */ = {
-			isa = PBXGroup;
-			children = (
-				157CFA772C64EDE400AFEA3C /* StatsticContentViews.swift */,
-				157CFA792C64EE3000AFEA3C /* TopBarView.swift */,
-				157CFA7B2C64EE6300AFEA3C /* SideBarView.swift */,
-				157CFA7D2C64EEBE00AFEA3C /* IconTitledButton.swift */,
-				157CFA7F2C64EF2000AFEA3C /* RoundedCorner.swift */,
-				157CFA812C64EF4400AFEA3C /* SideTabBarView.swift */,
-				157CFA832C64EFA100AFEA3C /* SideBarButtonsStackView.swift */,
-				157CFA852C64EFFD00AFEA3C /* GradientBackgroundView.swift */,
-				157CFA8B2C66BC1B00AFEA3C /* CircleImage.swift */,
-			);
-			path = StatisticViewContentViews;
+			path = ChatView;
 			sourceTree = "<group>";
 		};
 		15FAA9D32C4DB596008B56EC = {
@@ -365,6 +377,7 @@
 		15FAAA042C4DCDD7008B56EC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				157CFABD2C68EC3100AFEA3C /* ChatView */,
 				157CFA6D2C64C8FA00AFEA3C /* StatisticView */,
 				157CFAB42C68115E00AFEA3C /* CalculatorView */,
 				15FAAA552C5254D1008B56EC /* ReusableViews */,
@@ -470,6 +483,7 @@
 				15FAAA442C519CB6008B56EC /* LanguageManager.swift */,
 				15FAAA4C2C51C009008B56EC /* FormatManager.swift */,
 				157CFAAE2C68100A00AFEA3C /* NetworkManager.swift */,
+				157CFABB2C68E9F300AFEA3C /* MultipeerConnectManager.swift */,
 			);
 			path = AppManagers;
 			sourceTree = "<group>";
@@ -680,12 +694,14 @@
 				15FAAA022C4DCAD8008B56EC /* Color+Extensions.swift in Sources */,
 				15FAAA522C52462B008B56EC /* Cargo.swift in Sources */,
 				157CFA912C680E7400AFEA3C /* Calculator.swift in Sources */,
+				157CFABC2C68E9F300AFEA3C /* MultipeerConnectManager.swift in Sources */,
 				15FAAA0F2C4DD270008B56EC /* CodeInputFieldView.swift in Sources */,
 				15FAAA4F2C524602008B56EC /* Collection+Extensions.swift in Sources */,
 				15FAAA122C4DD270008B56EC /* AuthCodeView.swift in Sources */,
 				15FAAA092C4DD1E5008B56EC /* OneTimeCodeViewModel.swift in Sources */,
 				15FAAA032C4DCAD8008B56EC /* Font+Extensions.swift in Sources */,
 				157CFA702C64C9CD00AFEA3C /* Stubbable.swift in Sources */,
+				157CFABF2C68EC4100AFEA3C /* ChatView.swift in Sources */,
 				157CFA742C64ED7C00AFEA3C /* StatisticViewContent.swift in Sources */,
 				15FAAA102C4DD270008B56EC /* PhoneNumberView.swift in Sources */,
 				15FAAA282C4F6339008B56EC /* NavigationTypes.swift in Sources */,
@@ -923,6 +939,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WB-HomeWork-Info.plist";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Local connection";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -953,6 +970,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WB-HomeWork-Info.plist";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Local connection";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -15,9 +15,8 @@ private enum Constants {
 struct ContentView: View {
     var body: some View {
         ZStack {
-            BackgroundView()
             VStack {
-                CalculatorView()
+                ChatView()
             }
         }
     }
