@@ -60,7 +60,7 @@ private extension SideBarButtonsStackView {
             .cornerRadius(horizontalSizeClass == .compact ? 8 : 16)
             .shadow(
                 color: Color("shadowColor"),
-                radius: 36,
+                radius: 40,
                 x: 0,
                 y: 0
             )

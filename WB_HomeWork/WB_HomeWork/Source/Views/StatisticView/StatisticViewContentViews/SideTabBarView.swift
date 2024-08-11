@@ -45,19 +45,21 @@ struct SideTabBarView: View{
     private var buttonSideSize: CGFloat {
         return 48
     }
-
+    
     var body: some View {
-        HStack(spacing: 0) {
-            tabBar
-            selectedScreen
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+        ZStack {
+            HStack(spacing: 0) {
+                tabBar
+                selectedScreen
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+            }
+            .frame(minWidth: 0,
+                   maxWidth: horizontalSizeClass == .compact ? UIScreen.main.bounds.width : .infinity,
+                   minHeight: 0,
+                   maxHeight: .infinity,
+                   alignment: .leading)
+            .statusBar(hidden: true)
         }
-        .frame(minWidth: 0,
-               maxWidth: horizontalSizeClass == .compact ? UIScreen.main.bounds.width : .infinity,
-               minHeight: 0,
-               maxHeight: .infinity,
-               alignment: .leading)
-        .statusBar(hidden: true)
     }
 }
 

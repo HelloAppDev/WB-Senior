@@ -14,9 +14,10 @@ private enum Constants {
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-            VStack {
-                ChatView()
+        BackgroundView(image: UIImage(named: "purpleBackground")) {
+            ZStack {
+                SideTabBarView()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
         }
     }

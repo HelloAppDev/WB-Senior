@@ -7,16 +7,37 @@
 
 import SwiftUI
 
-struct BackgroundView: View {
+struct BackgroundView<Content>: View where Content: View {
+    private let image: UIImage?
+    private let content: Content
+    private let color: Color = .black
+    
+    init(image: UIImage?, @ViewBuilder content: @escaping () -> Content) {
+        self.image = image
+        self.content = content()
+    }
+    
     var body: some View {
-        Image("purpleBackground")
-            .resizable()
-            .aspectRatio(contentMode: .fill)
-            .blur(radius: 150, opaque: true)
-            .ignoresSafeArea(.all)
+        ZStack {
+            content
+        }
+        .background(
+            ZStack {
+                color
+                Image(uiImage: image ?? UIImage())
+                    .resizable()
+                    .scaledToFill()
+                    .blur(radius: 128)
+            }
+                .edgesIgnoringSafeArea(.all)
+                .frame(width: UIScreen.main.bounds.width,
+                       height: UIScreen.main.bounds.height)
+        )
     }
 }
 
 #Preview {
-    BackgroundView()
+    BackgroundView(image: UIImage(named: "purpleBackground")) {
+        EmptyView()
+    }
 }

@@ -10,11 +10,12 @@ import SwiftUI
 struct PhoneInputView: View {
     var body: some View {
         ZStack {
-            BackgroundView()
-            VStack {
-                //AuthCodeView()
-                    //.padding(.bottom, 32)
-                
+            BackgroundView(image: UIImage(named: "purpleBackground")) {
+                VStack {
+                    //AuthCodeView()
+                        //.padding(.bottom, 32)
+                    
+                }
             }
         }
     }
