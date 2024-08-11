@@ -18,16 +18,6 @@ struct ContentView: View {
             BackgroundView()
             VStack {
                 CalculatorView()
-//                Button(action: {
-//                    // go back action
-//                }, label: {
-//                    Image(systemName: Constants.chevronImage)
-//                        .padding(.leading, 10)
-//                    Text(Constants.goBackTitle)
-//                        .font(.montserratRegular(ofSize: 16))
-//                    
-//                })
-//                .foregroundColor(.white)
             }
         }
     }

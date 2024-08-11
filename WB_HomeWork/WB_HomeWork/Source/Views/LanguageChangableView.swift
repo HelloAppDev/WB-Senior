@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LanguageChangableView: View {
-    @StateObject private var languageManager = LanguageManager()
+    @EnvironmentObject private var languageManager: LanguageManager
     @State private var stringExamples = [
         L10nStrings.boy,
         L10nStrings.car,
@@ -100,5 +100,12 @@ extension LanguageChangableView {
                 .padding()
         }
         .padding()
+    }
+}
+
+
+extension LanguageChangableView: Stubbable {
+    static func stub() -> any View {
+        return LanguageChangableView().environmentObject(LanguageManager())
     }
 }
