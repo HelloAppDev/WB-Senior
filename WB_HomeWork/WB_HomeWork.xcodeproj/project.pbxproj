@@ -17,7 +17,7 @@
 		157CFA802C64EF2000AFEA3C /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CFA7F2C64EF2000AFEA3C /* RoundedCorner.swift */; };
 		157CFA822C64EF4400AFEA3C /* SideTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CFA812C64EF4400AFEA3C /* SideTabBarView.swift */; };
 		157CFA842C64EFA100AFEA3C /* SideBarButtonsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CFA832C64EFA100AFEA3C /* SideBarButtonsStackView.swift */; };
-		157CFA862C64EFFD00AFEA3C /* GradientBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CFA852C64EFFD00AFEA3C /* GradientBackgroundView.swift */; };
+		157CFA862C64EFFD00AFEA3C /* CustomGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CFA852C64EFFD00AFEA3C /* CustomGradient.swift */; };
 		157CFA8C2C66BC1B00AFEA3C /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CFA8B2C66BC1B00AFEA3C /* CircleImage.swift */; };
 		157CFA912C680E7400AFEA3C /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CFA902C680E7400AFEA3C /* Calculator.swift */; };
 		157CFA992C680F0500AFEA3C /* CalculatorUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CFA982C680F0500AFEA3C /* CalculatorUnitTests.swift */; };
@@ -30,6 +30,9 @@
 		157CFABA2C68142000AFEA3C /* CalculatorButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CFAB92C68141F00AFEA3C /* CalculatorButtonView.swift */; };
 		157CFABC2C68E9F300AFEA3C /* MultipeerConnectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CFABB2C68E9F300AFEA3C /* MultipeerConnectManager.swift */; };
 		157CFABF2C68EC4100AFEA3C /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CFABE2C68EC4100AFEA3C /* ChatView.swift */; };
+		157CFAC22C69A74B00AFEA3C /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 157CFAC12C69A74B00AFEA3C /* Charts */; };
+		157CFAC52C6A437400AFEA3C /* TooltipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CFAC42C6A437400AFEA3C /* TooltipView.swift */; };
+		157CFAC72C6A46AD00AFEA3C /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CFAC62C6A46AD00AFEA3C /* ChartView.swift */; };
 		15FAA9E02C4DB596008B56EC /* WB_HomeWorkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAA9DF2C4DB596008B56EC /* WB_HomeWorkApp.swift */; };
 		15FAA9E22C4DB596008B56EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAA9E12C4DB596008B56EC /* ContentView.swift */; };
 		15FAA9E42C4DB599008B56EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15FAA9E32C4DB599008B56EC /* Assets.xcassets */; };
@@ -108,7 +111,7 @@
 		157CFA7F2C64EF2000AFEA3C /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		157CFA812C64EF4400AFEA3C /* SideTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideTabBarView.swift; sourceTree = "<group>"; };
 		157CFA832C64EFA100AFEA3C /* SideBarButtonsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarButtonsStackView.swift; sourceTree = "<group>"; };
-		157CFA852C64EFFD00AFEA3C /* GradientBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackgroundView.swift; sourceTree = "<group>"; };
+		157CFA852C64EFFD00AFEA3C /* CustomGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGradient.swift; sourceTree = "<group>"; };
 		157CFA8B2C66BC1B00AFEA3C /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		157CFA902C680E7400AFEA3C /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		157CFA962C680F0500AFEA3C /* WB_HomeWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WB_HomeWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +126,8 @@
 		157CFAB92C68141F00AFEA3C /* CalculatorButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButtonView.swift; sourceTree = "<group>"; };
 		157CFABB2C68E9F300AFEA3C /* MultipeerConnectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerConnectManager.swift; sourceTree = "<group>"; };
 		157CFABE2C68EC4100AFEA3C /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		157CFAC42C6A437400AFEA3C /* TooltipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipView.swift; sourceTree = "<group>"; };
+		157CFAC62C6A46AD00AFEA3C /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		15FAA9DC2C4DB596008B56EC /* WB_HomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WB_HomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15FAA9DF2C4DB596008B56EC /* WB_HomeWorkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WB_HomeWorkApp.swift; sourceTree = "<group>"; };
 		15FAA9E12C4DB596008B56EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -194,6 +199,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				157CFAC22C69A74B00AFEA3C /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,7 +234,7 @@
 				157CFA7F2C64EF2000AFEA3C /* RoundedCorner.swift */,
 				157CFA812C64EF4400AFEA3C /* SideTabBarView.swift */,
 				157CFA832C64EFA100AFEA3C /* SideBarButtonsStackView.swift */,
-				157CFA852C64EFFD00AFEA3C /* GradientBackgroundView.swift */,
+				157CFA852C64EFFD00AFEA3C /* CustomGradient.swift */,
 				157CFA8B2C66BC1B00AFEA3C /* CircleImage.swift */,
 			);
 			path = StatisticViewContentViews;
@@ -275,6 +281,15 @@
 				157CFABE2C68EC4100AFEA3C /* ChatView.swift */,
 			);
 			path = ChatView;
+			sourceTree = "<group>";
+		};
+		157CFAC32C6A435F00AFEA3C /* ChartViews */ = {
+			isa = PBXGroup;
+			children = (
+				157CFAC42C6A437400AFEA3C /* TooltipView.swift */,
+				157CFAC62C6A46AD00AFEA3C /* ChartView.swift */,
+			);
+			path = ChartViews;
 			sourceTree = "<group>";
 		};
 		15FAA9D32C4DB596008B56EC = {
@@ -377,6 +392,7 @@
 		15FAAA042C4DCDD7008B56EC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				157CFAC32C6A435F00AFEA3C /* ChartViews */,
 				157CFABD2C68EC3100AFEA3C /* ChatView */,
 				157CFA6D2C64C8FA00AFEA3C /* StatisticView */,
 				157CFAB42C68115E00AFEA3C /* CalculatorView */,
@@ -557,6 +573,9 @@
 			dependencies = (
 			);
 			name = WB_HomeWork;
+			packageProductDependencies = (
+				157CFAC12C69A74B00AFEA3C /* Charts */,
+			);
 			productName = WB_HomeWork;
 			productReference = 15FAA9DC2C4DB596008B56EC /* WB_HomeWork.app */;
 			productType = "com.apple.product-type.application";
@@ -594,6 +613,9 @@
 				ru,
 			);
 			mainGroup = 15FAA9D32C4DB596008B56EC;
+			packageReferences = (
+				157CFAC02C69A74B00AFEA3C /* XCRemoteSwiftPackageReference "swiftui-charts" */,
+			);
 			productRefGroup = 15FAA9DD2C4DB596008B56EC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -693,6 +715,7 @@
 				157CFA7C2C64EE6300AFEA3C /* SideBarView.swift in Sources */,
 				15FAAA022C4DCAD8008B56EC /* Color+Extensions.swift in Sources */,
 				15FAAA522C52462B008B56EC /* Cargo.swift in Sources */,
+				157CFAC72C6A46AD00AFEA3C /* ChartView.swift in Sources */,
 				157CFA912C680E7400AFEA3C /* Calculator.swift in Sources */,
 				157CFABC2C68E9F300AFEA3C /* MultipeerConnectManager.swift in Sources */,
 				15FAAA0F2C4DD270008B56EC /* CodeInputFieldView.swift in Sources */,
@@ -706,8 +729,9 @@
 				15FAAA102C4DD270008B56EC /* PhoneNumberView.swift in Sources */,
 				15FAAA282C4F6339008B56EC /* NavigationTypes.swift in Sources */,
 				15FAAA332C5058C0008B56EC /* Queue.swift in Sources */,
+				157CFAC52C6A437400AFEA3C /* TooltipView.swift in Sources */,
 				15FAAA252C4F55BC008B56EC /* AccentButton.swift in Sources */,
-				157CFA862C64EFFD00AFEA3C /* GradientBackgroundView.swift in Sources */,
+				157CFA862C64EFFD00AFEA3C /* CustomGradient.swift in Sources */,
 				15FAAA2E2C4F6E39008B56EC /* NavigationExampleScreens.swift in Sources */,
 				15FAA9E02C4DB596008B56EC /* WB_HomeWorkApp.swift in Sources */,
 				157CFA782C64EDE400AFEA3C /* StatsticContentViews.swift in Sources */,
@@ -1029,6 +1053,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		157CFAC02C69A74B00AFEA3C /* XCRemoteSwiftPackageReference "swiftui-charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/spacenation/swiftui-charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		157CFAC12C69A74B00AFEA3C /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 157CFAC02C69A74B00AFEA3C /* XCRemoteSwiftPackageReference "swiftui-charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 15FAA9D42C4DB596008B56EC /* Project object */;
 }

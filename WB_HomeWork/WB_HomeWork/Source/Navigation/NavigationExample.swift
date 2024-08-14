@@ -56,7 +56,7 @@ struct NavigationExample: View {
                 }
             }
         }
-        .animation(.easeInOut)
+        .animation(.easeInOut) { _ in }
     }
 }
 

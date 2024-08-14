@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Charts
 
 private enum Constants {
     static let chevronImage = "chevron.left"
@@ -13,11 +14,15 @@ private enum Constants {
 }
 
 struct ContentView: View {
+    let data: [Double] = [0.1, 0.3, 0.2, 0.5, 0.7, 0.3]
+    
     var body: some View {
         BackgroundView(image: UIImage(named: "purpleBackground")) {
             ZStack {
                 SideTabBarView()
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+//                InteractiveChartView(data: data,
+//                                     lineColor: .blue,
+//                                     areaColors: [Color.lightBlue, Color.darkBlue.opacity(0.1)])
             }
         }
     }

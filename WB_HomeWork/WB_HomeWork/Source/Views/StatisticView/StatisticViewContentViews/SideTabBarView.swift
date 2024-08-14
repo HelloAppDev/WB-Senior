@@ -66,18 +66,18 @@ struct SideTabBarView: View{
 private extension SideTabBarView {
     @ViewBuilder
     private var tabBar: some View {
-        GradientBackgroundView(gradient: .darkPurple,
-                               points: (.leading, .trailing)) {
-                VStack(spacing: 0) {
-                    circledImage
-                    Spacer()
-                    buttonsStackView
-                    Spacer()
-                    addButton
-                }
+        ZStack {
+            Color.black.opacity(0.2)
+            VStack {
+                circledImage
+                Spacer()
+                buttonsStackView
+                Spacer()
+                addButton
             }
-            .frame(minWidth: 80)
-            .fixedSize(horizontal: true, vertical: false)
+        }
+        .frame(minWidth: 80)
+        .fixedSize(horizontal: true, vertical: false)
     }
 
     @ViewBuilder

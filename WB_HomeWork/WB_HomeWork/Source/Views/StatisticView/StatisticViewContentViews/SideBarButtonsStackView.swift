@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct SideBarButtonsStackView: View {
-    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     @Binding private var selectedItem: TabBarItems
     let gradient: CustomGradient = .lightPink
 
@@ -57,7 +56,7 @@ private extension SideBarButtonsStackView {
                 endPoint: .bottom
             ))
             .frame(width: gradientRectangleSide, height: gradientRectangleSide)
-            .cornerRadius(horizontalSizeClass == .compact ? 8 : 16)
+            .cornerRadius(16)
             .shadow(
                 color: Color("shadowColor"),
                 radius: 40,

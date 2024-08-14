@@ -28,6 +28,8 @@ struct BackgroundView<Content>: View where Content: View {
                     .resizable()
                     .scaledToFill()
                     .blur(radius: 128)
+                    .scaleEffect(1.6)
+                    .clipped()
             }
                 .edgesIgnoringSafeArea(.all)
                 .frame(width: UIScreen.main.bounds.width,

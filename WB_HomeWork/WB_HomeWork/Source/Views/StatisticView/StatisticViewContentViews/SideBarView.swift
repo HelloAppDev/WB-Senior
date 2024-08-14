@@ -55,8 +55,7 @@ struct SideBarView<Content>: View where Content: View {
 private extension SideBarView {
     @ViewBuilder
     private var sideView: some View {
-        GradientBackgroundView(gradient: gradient,
-                               points: (.leading, .trailing)) {}
+        Color.black.opacity(0.4)
             .frame(width: Constants.sideViewWidth)
             .cornerRadius(44, corners: [.topLeft, .bottomLeft])
             .offset(x: sideOffset)
